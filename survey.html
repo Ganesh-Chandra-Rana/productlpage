@@ -1,0 +1,116 @@
+<!-- survey page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        #main{
+            background-color: aquamarine;
+        }
+        #title{
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #description{
+            margin-top: 0px;
+            text-align: center;
+        }
+        .cmnt{
+            margin: 2px 4px 5px 3px;
+        }
+      input[type="submit"]{
+           position:relative ;
+           top:16px;
+           left: 173px;
+           color:blue;
+           background-color: aqua;
+           border: 2px solid green;
+           border-radius: 8px;
+           cursor: pointer;
+
+
+       }
+    #survey-form {
+    margin: auto;
+    background-color: rgba(4, 5, 59, 0.678);
+    box-sizing: border-box;
+    width: 557px;
+    height: 443px;
+    border: gray 4px solid;
+    border-radius: 14px;
+padding: 40px 38px;}
+#survey-form input{
+    margin: 3px 4px ;
+}
+#comment-label
+{
+    margin: 4px 2px 3px 2px;
+}
+#description p {
+    text-align: center;
+    font-size: x-large;
+    color: blue;
+    background-color: aqua;
+}
+ </style>
+ 
+    <script >
+        
+        function display(){
+             document.write("Thank you for submitting form").style.color="red";
+         }
+     </script>
+</head>
+<body id="main">
+    <p id="demo"> </p>
+    <div id="title">
+  <header>
+      <h1>Student Survey</h1></div>
+      <div id="description">
+          <p >Thank you for your support!</p>
+      
+    </div>
+      </header>
+      <hr color="blue">
+      <form action="" id="survey-form" onsubmit="display()">
+          <label for="name" id="name-label" >
+            Name:
+          </label><br>
+          <input type="text " name="name" id="name" required placeholder="Enter your name"><br>
+          Choose Gender:<BR>
+          <select name="dropdown" id="dropdown" placeholder="Choose your gender">
+              <option value="select">SELECT</option>
+              <option value="male">MALE</option>
+              <option value="female">FEMALE</option>
+
+          </select><BR>
+<label for="email" id="email-label">
+    Email:
+    <br>
+<input type="email" name="email" id="email" required placeholder="Enter your Email"><br>
+</label>
+<label for="number" id="number-label">
+    Contact:
+    <br>
+<input type="number" name="number" id="number" placeholder="Enter your mobile number" required><br>
+</label>
+<label for="checkbox" id="checkbox">
+    Subjects:-<br>
+    <input type="checkbox" name="c1" id="c1" value="2020"> Math<br>
+<input type="checkbox" name="c1" id="c2" value="2021">English<br>
+<input type="checkbox" name="c1" id="c3" value="2022">IT<br>
+</label>
+
+<label for="comment" id="comment-label">
+  <span class="cmnt">Any comment:- </span> <br> <textarea name="comment" id="comment" cols="20" rows="5"></textarea><br>
+</label>
+
+<input type="submit" id="submit" style="text-align:center;"value="Submit" >
+      </form>
+      
+</body>
+</html>
